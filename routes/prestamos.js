@@ -2,8 +2,8 @@
 const express = require('express');
 const router = express.Router();
 const { verifyToken, isAdmin } = require('../middleware/auth');
-const Prestamo = require('../models/Prestamo');
-const Libro = require('../models/Libro');
+const Prestamo = require('../models/prestamo');
+const Libro = require('../models/libro');
 const Usuario = require('../models/usuario'); // <-- ¡AÑADE ESTA LÍNEA!
 // POST /api/prestamos (Crear un préstamo) - SOLO ADMIN
 router.post('/', [verifyToken, isAdmin], async (req, res) => {

@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const { verifyToken, isAdmin } = require('../middleware/auth'); // Los guardias
-const Usuario = require('../models/Usuario'); // <-- ¡CORREGIDO! (Con 'U' mayúscula)
+const Usuario = require('../models/usuario'); // <-- ¡CORREGIDO! (Con 'U' mayúscula)
 
 // GET /api/usuarios (Obtener todos los usuarios)
 // Esta ruta es SÚPER PRIVADA (Solo Admin)

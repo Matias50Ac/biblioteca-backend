@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const { verifyToken, isAdmin } = require('../middleware/auth'); // Nuestros guardias
-const Libro = require('../models/Libro'); // Modelo de Libro
+const Libro = require('../models/libro'); // Modelo de Libro
 
 // GET /api/libros (Obtener todos los libros)
 // Esta ruta es PÚBLICA (para Estudiantes y Admins)
